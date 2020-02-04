@@ -1,8 +1,4 @@
 .idea/
-<<<<<<< HEAD
 pydream/__pycache__/
 build/
 PyDREAM.egg-info/
-=======
-todo.txt
->>>>>>> 67cb63c2eec12e2e94a5ac44b4371cab9c104fc1

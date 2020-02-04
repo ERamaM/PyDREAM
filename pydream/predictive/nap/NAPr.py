@@ -9,19 +9,10 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.externals import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-<<<<<<< HEAD
 from tensorflow.keras.callbacks import Callback, ModelCheckpoint
 from tensorflow.keras.models import model_from_json
 from tensorflow.keras.layers import Input, Dropout, Dense, BatchNormalization
 from tensorflow.keras.models import Model
-
-=======
-from keras.callbacks import Callback, ModelCheckpoint
-from keras.models import model_from_json
-from keras.layers import Input, Dropout, Dense
-from keras.models import Model
-from keras.layers.normalization import BatchNormalization
->>>>>>> 67cb63c2eec12e2e94a5ac44b4371cab9c104fc1
 from pydream.predictive.nap.NAP import multiclass_roc_auc_score
 from pydream.util.TimedStateSamples import TimedStateSample
 
