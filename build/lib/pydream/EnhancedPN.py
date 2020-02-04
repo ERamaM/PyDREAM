@@ -219,7 +219,7 @@ class EnhancedPN:
                     if count_resources and resources is not None:
                         for resource_key in resources:
                             if resource_key in event.keys():
-                                val = resource_key + "_:_" + str(event[resource_key])
+                                val = resource_key + "_:_" + event[resource_key]
                                 if val in resource_count.keys():
                                     resource_count[val] += 1
 

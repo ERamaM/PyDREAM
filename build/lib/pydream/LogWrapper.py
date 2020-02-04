@@ -40,16 +40,13 @@ class LogWrapper:
     def getResourceKeys(self):
         return self.resource_keys
 
-    def setResourceKeys(self, res_keys):
-        self.resource_keys = res_keys
-
     def getMaxTraceDuration(self):
         """ trace duration is measured in seconds """
         max_trace_duration = 0
 
         for trace in self.log:
             if len(trace) < 2:
-               self.ignored_traces.add(trace.attributes['concept:name'])
+                self.ignored_traces.add(trace.attributes['concept:name'])
 
             seconds = time_delta_seconds(trace[0]['time:timestamp'], trace[-1]['time:timestamp'])
             if seconds > max_trace_duration:

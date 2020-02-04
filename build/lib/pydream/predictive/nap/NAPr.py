@@ -213,7 +213,6 @@ class NAPr:
 
             test_acc = accuracy_score(self.Y_test_int, y_pred, normalize=True)
             test_loss, _ = self.model.evaluate(self.X_test, self.Y_test)
-            print("Test acc: ", test_acc)
 
             precision, recall, fscore, _ = precision_recall_fscore_support(self.Y_test_int, y_pred, average='weighted',
                                                                            pos_label=None)

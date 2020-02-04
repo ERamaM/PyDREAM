@@ -1,1 +1,4 @@
 .idea/
+pydream/__pycache__/
+build/
+PyDREAM.egg-info/
